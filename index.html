@@ -2,21 +2,29 @@
 <html>
 <head>
 	<title>Hari Kiran Vusirikala</title>
-
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
 	<p>This is the wwebsite made by Hari Kiran Vusirikala</p>
 	<p>Working fine...!!!</p>
 	<p>This is done through deploying via github.</p>
 	<p>Here comes my website</p>
+	<form action="post">
+		<button
+			class="g-recaptcha"
+			data-sitekey="6Le5LWIUAAAAAGCEe8BJr_O102WQl9i_Tres1TCZ"
+			data-callback="YourOnSubmitFn">
+			Submit
+		</button>
+	</form>
 
 	<script src="https://www.google.com/recaptcha/api.js?render=6LeKMWIUAAAAAA18I1pty7kskVGAtS4SvW-9Mjul"></script>
 	<script>
-	grecaptcha.ready(function() {
-	grecaptcha.execute('6LeKMWIUAAAAAA18I1pty7kskVGAtS4SvW-9Mjul', {action: 'login'}).then(function(token) {
-	 ...
-	});
-	});
+		grecaptcha.ready(function() {
+			grecaptcha.execute('6LeKMWIUAAAAAA18I1pty7kskVGAtS4SvW-9Mjul', {action: 'login'}).then(function(token) {
+			 ...
+			});
+		});
 	</script>
 </body>
 </html>
