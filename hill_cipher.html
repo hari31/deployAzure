@@ -2,8 +2,71 @@
 <html>
 <head>
     <title>PUBG player doing Hill Cipher</title>
+    <link rel="shortcut icon" href="./pubg_logo.png" />
+    <style>
+		body {font-family: Arial, Helvetica, sans-serif;}
+		/* The Modal (background) */
+		.modal {
+		    display: none; /* Hidden by default */
+		    position: fixed; /* Stay in place */
+		    z-index: 1; /* Sit on top */
+		    padding-top: 10px; /* Location of the box */
+		    left: 0;
+		    top: 0;
+		    width: 100%; /* Full width */
+		    height: 100%; /* Full height */
+		    overflow: auto; /* Enable scroll if needed */
+		    background-color: rgb(0,0,0); /* Fallback color */
+		    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+		}
+		.modal-content {
+		    background-color: #fefefe;
+		    margin: auto;
+		    padding: 20px;
+		    border: 1px solid #888;
+		    width: 80%;
+		}
+		.close {
+		    color: rgba(0,0,0,0.4);
+		    position: fixed;
+		    left: 88%;
+		    /*z-index: 99;*/
+		    /*padding-left: 90%;*/
+		    float: right;
+		    font-size: 35px;
+		    font-weight: bold;
+		}
+		.close:hover,
+		.close:focus {
+		    color: #000;
+		    text-decoration: none;
+		    cursor: pointer;
+		}
+	</style>
 </head>
-<body>
-    <iframe src=https://www.hackerearth.com/submission/key/73743a9e5c5e48b58ab5a221936e7f49/?theme=dark&content-length=2978 width='100%' height='3338px' frameborder='0' allowtransparency='true' scrolling='yes'></iframe>
+<body onload="myFunction()">
+    <iframe id="code" src=https://www.hackerearth.com/submission/key/73743a9e5c5e48b58ab5a221936e7f49/?theme=dark&content-length=2978 width='100%' height='3338px' frameborder='0' allowtransparency='true' scrolling='yes'></iframe>
+
+    <div id="banner" class="modal">
+    	<div class="modal-content">
+		    <span class="close">&times;</span>
+		    <img src="./pubg_banner.jpg" width="100%" height="100%">
+		</div>
+	</div>
+    <script type="text/javascript">
+    	function myFunction(argument) {
+    		var banner = document.getElementById('banner');
+	    	banner.style.display = "block";
+	    	var span = document.getElementsByClassName("close")[0];
+	    	span.onclick = function() {
+			    banner.style.display = "none";
+			}
+			window.onclick = function(event) {
+			    if (event.target == modal) {
+			        banner.style.display = "none";
+			    }
+			}
+    	}
+    </script>
 </body>
 </html>
