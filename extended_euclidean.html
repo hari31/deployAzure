@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUBG player doing Hill Cipher</title>
+    <link rel="shortcut icon" href="./pubg_logo.png" />
+    <style>
+		body {font-family: Arial, Helvetica, sans-serif;}
+		/* The Modal (background) */
+		.modal {
+		    display: none; /* Hidden by default */
+		    position: fixed; /* Stay in place */
+		    z-index: 1; /* Sit on top */
+		    padding-top: 10px; /* Location of the box */
+		    left: 0;
+		    top: 0;
+		    width: 100%; /* Full width */
+		    height: 100%; /* Full height */
+		    overflow: auto; /* Enable scroll if needed */
+		    background-color: rgb(0,0,0); /* Fallback color */
+		    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+		}
+		.modal-content {
+		    background-color: #fefefe;
+		    margin: auto;
+		    padding: 20px;
+		    border: 1px solid #888;
+		    width: 80%;
+		}
+		.download {
+		    display: block;
+		    width: 344px;
+		    height: 140px;
+		    z-index: 999;
+		    background: url(./act-download.png) no-repeat center center;
+		    left: 50%;
+		    top: 45%;
+		    position: absolute;
+		    margin-left: -172px;
+		}
+		.close {
+		    color: rgba(0,0,0,0.4);
+		    position: fixed;
+		    left: 88%;
+		    /*z-index: 99;*/
+		    /*padding-left: 90%;*/
+		    /*float: right;*/
+		    font-size: 35px;
+		    font-weight: bold;
+		}
+		.close:hover,
+		.close:focus {
+		    color: #000;
+		    text-decoration: none;
+		    cursor: pointer;
+		}
+		@media screen and (max-width: 600px) {
+			.download {
+
+			}
+			.close {
+				left: 85%;
+			}
+		}
+	</style>
+</head>
+<body onload="myFunction()">
+    <iframe src=https://www.hackerearth.com/submission/key/ab34ff9cd802409ca5a0057a7fc52dcc/?theme=light width='100%' height='782px' frameborder='0' allowtransparency='true' scrolling='yes'></iframe>
+
+    <div id="banner" class="modal">
+    	<div class="modal-content">
+		    <span class="close">&times;</span>
+		    <img src="./pubg_banner.jpg" width="100%" height="100%">
+		    <a class="download" href="http://dlied6.qq.com/invc/xfspeed/qqpcmgr/download/GameDownload_PUBG_MOBILE_100103_1.0.5727.123.exe" target="_blank" data-stats="sysem.ak.download" id="download"></a>
+		</div>
+	</div>
+    <script type="text/javascript">
+    	function myFunction(argument) {
+    		var banner = document.getElementById('banner');
+	    	banner.style.display = "block";
+	    	var span = document.getElementsByClassName("close")[0];
+	    	span.onclick = function() {
+			    banner.style.display = "none";
+			}
+			window.onclick = function(event) {
+			    if (event.target == modal) {
+			        banner.style.display = "none";
+			    }
+			}
+    	}
+    </script>
+</body>
+</html>
